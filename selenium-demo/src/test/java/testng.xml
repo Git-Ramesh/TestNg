@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RetryOnTestFailure" parallel="false">
+	<listeners>
+		<listener
+			class-name="com.rs.selenium.listener.CustomAnnotationTransformer" />
+	</listeners>
+	<parameter name="author" value="Ramesh"></parameter>
+	<test name="RetryTest">
+		<classes>
+			<class name="com.rs.app.GmailLoginTest" />
+			<class name="com.rs.app.NewTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
